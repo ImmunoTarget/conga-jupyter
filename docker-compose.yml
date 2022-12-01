@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+    conga-jupyter:
+        image: conga-jupyter
+        container_name: conga-jupyter
+        build: .
+        ports:
+            - '8888:8888'
+        volumes:
+            - '${PWD}:/home/jovyan/work'
