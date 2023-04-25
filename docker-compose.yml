@@ -7,4 +7,4 @@ services:
         ports:
             - '8888:8888'
         volumes:
-            - '${PWD}:/home/jovyan/work'
+            - '${PWD}/data:/home/jovyan/conga/data'

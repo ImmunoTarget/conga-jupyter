@@ -14,6 +14,8 @@ RUN R -e "install.packages('Seurat',dependencies=TRUE, repos='http://cran.rstudi
 RUN R -e "install.packages('reticulate',dependencies=TRUE, repos='http://cran.rstudio.com/')"
 RUN R -e "install.packages('patchwork',dependencies=TRUE, repos='http://cran.rstudio.com/')"
 RUN R -e "install.packages('tidyverse',dependencies=TRUE, repos='http://cran.rstudio.com/')"
+RUN R -e "install.packages('BiocManager',dependencies=TRUE, repos='http://cran.rstudio.com/')"
+RUN R -e "BiocManager::install('SingleCellExperiment')"
 
 RUN wget https://www.dropbox.com/s/r7rpsftbtxl89y5/conga_example_datasets_v1.zip
 RUN unzip conga_example_datasets_v1.zip
