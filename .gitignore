@@ -1,0 +1,7 @@
+.ipynb_checkpoints/
+.Rhistory
+data/test
+data/20118016
+*.rds
+*.h5ad
+*.gz
