@@ -29,6 +29,9 @@ RUN R -e "install.packages('remotes', dependencies=TRUE, repos='http://cran.rstu
 RUN wget https://www.dropbox.com/s/r7rpsftbtxl89y5/conga_example_datasets_v1.zip
 RUN unzip conga_example_datasets_v1.zip
 
+# Copy data for binger
+COPY my_scripts my_scripts
+
 # imagemagick
 USER root
 RUN apt-get update && apt-get install -y imagemagick
