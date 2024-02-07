@@ -8,4 +8,4 @@ services:
             - '8888:8888'
         volumes:
             - '${PWD}/data:/home/jovyan/conga/data'
-            - '${PWD}/scripts:/home/jovyan/conga/my_scripts'
+            - '${PWD}/my_scripts:/home/jovyan/conga/my_scripts'
